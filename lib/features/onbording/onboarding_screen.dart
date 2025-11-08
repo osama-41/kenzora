@@ -1,7 +1,7 @@
 import 'package:flutter/widgets.dart';
 
-class OnboardinScreen extends StatelessWidget {
-  const OnboardinScreen({super.key});
+class OnboardingScreen extends StatelessWidget {
+  const OnboardingScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
