@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:kenzora/core/theming/colors.dart';
 import 'package:kenzora/core/theming/font_weight_helper.dart';
+import 'package:kenzora/core/theming/fonts.dart';
 
 class TextStyles {
   static TextStyle font24BlackBold = TextStyle(
@@ -9,11 +10,17 @@ class TextStyles {
     fontWeight: FontWeightHelper.bold,
     color: Colors.black,
   );
-
-  static TextStyle font32BlueBold = TextStyle(
+  static TextStyle font28LightGreyMedium = TextStyle(
+    fontFamily: Fonts.poppinsMedium,
+    fontSize: 28.sp,
+    fontWeight: FontWeightHelper.medium,
+    color: ColorsManager.moreLightGray,
+  );
+  static TextStyle font32LightGreyBold = TextStyle(
+    fontFamily: Fonts.poppinsBold,
     fontSize: 32.sp,
     fontWeight: FontWeightHelper.bold,
-    color: ColorsManager.mainGold,
+    color: ColorsManager.moreLightGray,
   );
 
   static TextStyle font13BlueSemiBold = TextStyle(
@@ -107,6 +114,7 @@ class TextStyles {
   );
 
   static TextStyle font16WhiteMedium = TextStyle(
+    fontFamily: Fonts.poppinsMedium,
     fontSize: 16.sp,
     fontWeight: FontWeightHelper.medium,
     color: Colors.white,
