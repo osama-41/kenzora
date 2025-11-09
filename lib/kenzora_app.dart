@@ -16,7 +16,7 @@ class KenzoraApp extends StatelessWidget {
       child: MaterialApp(
         title: "Doc App",
         theme: ThemeData(
-          primaryColor: ColorsManager.mainGold,
+          primaryColor: ColorsManager.mainGreen,
           scaffoldBackgroundColor: Colors.white,
         ),
         debugShowCheckedModeBanner: false,
