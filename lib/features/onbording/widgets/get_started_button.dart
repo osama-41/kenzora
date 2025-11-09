@@ -11,7 +11,9 @@ class GetStartedButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return TextButton(
       style: ButtonStyle(
-        backgroundColor: WidgetStateProperty.all(ColorsManager.mainGold),
+        backgroundColor: WidgetStateProperty.all(
+          const Color.fromARGB(255, 54, 235, 108),
+        ),
         tapTargetSize: MaterialTapTargetSize.shrinkWrap,
         minimumSize: WidgetStateProperty.all(const Size(double.infinity, 52)),
         shape: WidgetStateProperty.all(

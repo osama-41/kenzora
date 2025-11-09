@@ -22,14 +22,14 @@ class LogoAndText extends StatelessWidget {
         verticalSpace(20.h),
         Padding(
           padding: const EdgeInsets.symmetric(horizontal: 22.0, vertical: 0),
-          child: Text('Be Unique,', style: TextStyles.font32LightGreyBold),
+          child: Text(
+            'Shopping made simple,',
+            style: TextStyles.font28LightGreyMedium,
+          ),
         ),
         Padding(
           padding: const EdgeInsets.symmetric(horizontal: 22.0, vertical: 0),
-          child: Text(
-            'With your own style.',
-            style: TextStyles.font28LightGreyMedium,
-          ),
+          child: Text('Just for you.', style: TextStyles.font32LightGreyBold),
         ),
       ],
     );
