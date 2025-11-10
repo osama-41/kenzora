@@ -35,6 +35,18 @@ class TextStyles {
     fontWeight: FontWeightHelper.regular,
     color: ColorsManager.darkBlue,
   );
+  static TextStyle font13WhiteRegular = TextStyle(
+    fontFamily: Fonts.poppinsReg,
+    fontSize: 13.sp,
+    fontWeight: FontWeightHelper.regular,
+    color: Colors.white,
+  );
+  static TextStyle font13WhiteMedium = TextStyle(
+    fontFamily: Fonts.poppinsMedium,
+    fontSize: 13.sp,
+    fontWeight: FontWeightHelper.medium,
+    color: Colors.white,
+  );
   static TextStyle font24GreenBold = TextStyle(
     fontFamily: Fonts.poppinsBold,
     fontSize: 24.sp,
@@ -139,6 +151,12 @@ class TextStyles {
   );
   static TextStyle font18WhiteMedium = TextStyle(
     fontFamily: Fonts.poppinsMedium,
+    fontSize: 18.sp,
+    fontWeight: FontWeightHelper.medium,
+    color: Colors.white,
+  );
+  static TextStyle font18WhiteBold = TextStyle(
+    fontFamily: Fonts.poppinsBold,
     fontSize: 18.sp,
     fontWeight: FontWeightHelper.medium,
     color: Colors.white,
