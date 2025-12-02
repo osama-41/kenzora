@@ -1,45 +1,25 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:kenzora/core/theming/colors.dart';
-import 'package:kenzora/core/theming/styles.dart';
+import 'package:kenzora/features/home/data/models/category_model.dart';
+import 'package:kenzora/features/home/ui/widgets/categories_list_view_item.dart';
 
 class CategoriesListView extends StatelessWidget {
-  const CategoriesListView({super.key});
+  final List<CategoryModel?> categoriesList;
+  const CategoriesListView({super.key, required this.categoriesList});
 
   @override
   Widget build(BuildContext context) {
     return SizedBox(
       height: 55.h,
-      child: Expanded(
-        child: ListView.builder(
-          scrollDirection: Axis.horizontal,
-          itemCount: 7,
-          itemBuilder: (context, index) {
-            return Padding(
-              padding: EdgeInsetsDirectional.only(start: index == 0 ? 0 : 20.w),
-              child: Column(
-                children: [
-                  Container(
-                    height: 30.h,
-                    decoration: BoxDecoration(
-                      color: ColorsManager.mainGreen,
-                      borderRadius: BorderRadius.circular(8.r),
-                    ),
-                    child: Center(
-                      child: Padding(
-                        padding: const EdgeInsets.symmetric(horizontal: 8),
-                        child: Text(
-                          'Category',
-                          style: TextStyles.font13WhiteMedium,
-                        ),
-                      ),
-                    ),
-                  ),
-                ],
-              ),
-            );
-          },
-        ),
+      child: ListView.builder(
+        scrollDirection: Axis.horizontal,
+        itemCount: categoriesList.length,
+        itemBuilder: (context, index) {
+          return CategoriesListViewItem(
+            category: categoriesList[index],
+            itemIndex: index,
+          );
+        },
       ),
     );
   }
